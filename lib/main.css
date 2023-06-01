@@ -1,0 +1,44 @@
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-link,
+h2 {
+    text-align: center;
+}
+
+section {
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 70px;
+}
+
+h1,
+a {
+    color: #fff;
+}
+
+#cabecalho {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+
+h2 {
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.d-block {
+    height: 550px;
+}
+
+.navbar {
+    background-color: #5575c7;
+}
+
+article {
+    margin-bottom: 30px;
+}

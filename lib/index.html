@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap Avançado</title>
+        <link rel="stylesheet" href="./bootstrap.min.css" />
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <header id="cabecalho">
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h1>Amaury Informações</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#produtos">Produtos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <div class="container">
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img
+                                class="d-block w-100"
+                                src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_1280.jpg"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Notebook</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="https://cdn.pixabay.com/photo/2016/11/29/05/08/apple-1867461_1280.jpg"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Celular</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="https://cdn.pixabay.com/photo/2021/09/07/07/11/joysticks-6603119_1280.jpg"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Joystick</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        data-bs-target="#carousel-exemplo"
+                        data-bs-slide="prev"
+                        class="carousel-control-prev"
+                        type="button"
+                    >
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#carousel-exemplo"
+                            class="active"
+                            data-bs-slide-to="0"
+                        ></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                            <header class="card-header">Notebook</header>
+                            <img
+                                class="d-block"
+                                src="https://cdn.pixabay.com/photo/2014/05/05/19/54/keyboard-338513_1280.jpg"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Porque ter um Notebook ?</h4>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis natus placeat sed
+                                    illo? Enim laudantium.
+                                </p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">Postado em <time>31/05/2023 às 09:43:00</time></footer>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                            <header class="card-header">Celular</header>
+                            <img
+                                class="d-block"
+                                src="https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_1280.jpg"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Redes sociais, uma febre no século XX1!</h4>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis natus placeat sed
+                                    illo? Enim laudantium.
+                                </p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">Postado em <time>31/05/2023 às 09:43:00</time></footer>
+                        </article>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                            <header class="card-header">Joystick</header>
+                            <img
+                                class="d-block"
+                                src="https://cdn.pixabay.com/photo/2020/10/01/16/53/game-controller-5619105_1280.jpg"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Joystick's confortáveis para os players.</h4>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis natus placeat sed
+                                    illo? Enim laudantium.
+                                </p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">Postado em <time>31/05/2023 às 09:43:00</time></footer>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./bootstrap.bundle.min.js"></script>
+    </body>
+</html>
